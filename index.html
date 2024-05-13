@@ -1,1 +1,698 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suresh Milk Point - Connecting properity with services </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body {
+    margin: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1{
+  color:greenyellow;
+  }
+  h2 {
+    font-family: "Roboto", sans-serif;
+  }
+  .header .logo {
+    height: 100px;
+    width: 240px;
+    border-radius: 100px;
+  }
+  .header .tagline {
+    font-size: 16px;
+  }
+ 
+  /* CSS for Service 4 section */
+  #service4 {
+    background-color: #222; /* Dark background */
+    color: white; /* White text */
+    padding: 50px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  #service4 h1 {
+    color: greenyellow; /* Heading color */
+    text-align: center; /* Center-align the heading */
+  }
+
+  label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 10px; /* Add space below the label */
+  }
+
+  #item {
+    width: 100%; /* Full width for the select box */
+    padding: 10px; /* Padding for the select box */
+    margin-bottom: 20px; /* Add space below the select box */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* CSS for paragraph in Service 4 section */
+  #service4 p {
+    font-size: 25px; /* Set font size */
+    line-height: 1.6; /* Set line height for better readability */
+    margin-bottom: 20px; /* Add space below the paragraph */
+  }
+
+  
+
+  button {
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  .card {
+    transition: transform 0.3s ease-in-out;
+    background-color: #121c25; /* Change the background color as needed */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth effect */
+}
+    .card {
+      margin-bottom: 30px;
+    }
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+  #value {
+    margin-top: 20px; /* Add space above the value */
+    font-size: 18px; /* Increase font size */
+  }
+.card-title {
+    transition: color 0.3s ease-in-out;
+    color: #e8e9eb; /* Change the text color of the card title */
+}
+
+.card:hover .card-title {
+    color: #007bff;
+}
+
+.card-text {
+    transition: color 0.3s ease-in-out;
+    color: #6c757d; /* Change the text color of the card content */
+}
+
+.card:hover .card-text {
+    color: #ecf0e6;
+}
+  /* Default styles */
+
+/* CSS for Service 4 section */
+#service4 {
+  background-color: #222; /* Dark background */
+  color: white; /* White text */
+  padding: 50px; /* Padding around the content */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* CSS for paragraph in Service 4 section */
+#service4 p {
+  font-size: 25px; /* Set font size */
+  line-height: 1.6; /* Set line height for better readability */
+  margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+/* Nav styles */
+.nav li {
+  padding: 5px 10px;
+}
+
+.nav li:hover {
+  border-radius: 25px;
+  color: blue;
+}
+
+.nav-content {
+  margin-left: auto;
+}
+
+/* Flex container styles */
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Adjust flex direction for smaller screens */
+  padding: 20px;
+}
+
+/* Text container styles */
+.text-container {
+  padding: 20px; /* Reduce padding for smaller screens */
+}
+
+/* Image container styles */
+.image-container {
+  padding: 20px; /* Reduce padding for smaller screens */
+}
+
+/* Card styles */
+.card {
+  margin-bottom: 20px; /* Reduce margin for smaller screens */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  /* Adjust styles for medium-sized screens */
+  .flex-container {
+    flex-direction: row; /* Adjust flex direction */
+    justify-content: space-between; /* Align items evenly */
+  }
+  
+  .flex-container .text-container {
+    width: 50%; /* Set width for text container */
+  }
+  
+  .flex-container .image-container {
+    width: 50%; /* Set width for image container */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for small-sized screens */
+  .nav {
+    flex-direction: column; /* Change navigation layout to vertical */
+  }
+
+  .nav li {
+    padding: 10px 0; /* Adjust padding for smaller screens */
+  }
+
+  .flex-container .text-container,
+  .flex-container .image-container {
+    width: 100%; /* Set width to full for smaller screens */
+  }
+}
+
+/* Add more media queries as needed *//* Default styles */
+
+/* CSS for Service 4 section */
+#service4 {
+  background-color: #222; /* Dark background */
+  color: white; /* White text */
+  padding: 5vw; /* Padding based on viewport width */
+  border-radius: 1.5vw; /* Rounded corners based on viewport width */
+}
+
+/* CSS for paragraph in Service 4 section */
+#service4 p {
+  font-size: 2vw; /* Font size based on viewport width */
+  line-height: 1.6; /* Set line height for better readability */
+  margin-bottom: 2vw; /* Margin based on viewport width */
+}
+
+/* Nav styles */
+.nav {
+  display: flex; /* Ensure flex layout for navigation */
+  flex-wrap: wrap; /* Wrap items if they exceed width */
+  justify-content: center; /* Center-align navigation items */
+}
+
+.nav li {
+  padding: 1vw 2vw; /* Padding based on viewport width */
+  margin: 1vw; /* Margin based on viewport width */
+}
+
+/* Flex container styles */
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Adjust flex direction for smaller screens */
+  padding: 5vw; /* Padding based on viewport width */
+}
+
+/* Text container styles */
+.text-container {
+  padding: 5vw; /* Padding based on viewport width */
+}
+
+/* Image container styles */
+.image-container {
+  padding: 5vw; /* Padding based on viewport width */
+}
+
+/* Card styles */
+.card {
+  margin-bottom: 5vw; /* Margin based on viewport width */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 576px) {
+  /* Adjust styles for small-sized screens and above */
+  #service4 {
+    padding: 3vw; /* Reduce padding for smaller screens */
+    border-radius: 1vw; /* Reduce border radius for smaller screens */
+  }
+
+  #service4 p {
+    font-size: 1.5vw; /* Reduce font size for smaller screens */
+    margin-bottom: 1.5vw; /* Reduce margin for smaller screens */
+  }
+
+  .nav li {
+    padding: 1vw 1.5vw; /* Reduce padding for smaller screens */
+    margin: 0.5vw; /* Reduce margin for smaller screens */
+  }
+
+  .flex-container {
+    flex-direction: row; /* Adjust flex direction for medium-sized screens and above */
+    justify-content: space-between; /* Align items evenly */
+    align-items: center; /* Center-align items vertically */
+  }
+
+  .flex-container .text-container,
+  .flex-container .image-container {
+    width: 45%; /* Set width for text and image containers */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Adjust styles for medium-sized screens and above */
+  #service4 {
+    padding: 2vw; /* Reduce padding for medium-sized screens */
+  }
+
+  #service4 p {
+    font-size: 1.3vw; /* Reduce font size for medium-sized screens */
+    margin-bottom: 1vw; /* Reduce margin for medium-sized screens */
+  }
+
+  .nav li {
+    padding: 0.8vw 1.2vw; /* Adjust padding for medium-sized screens */
+    margin: 0.3vw; /* Adjust margin for medium-sized screens */
+  }
+
+  .flex-container .text-container,
+  .flex-container .image-container {
+    width: 40%; /* Adjust width for text and image containers */
+  }
+}
+
+/* Add more media queries as needed */
+
+  
+  .nav li {
+    padding: 5px 10px;
+  }
+  .nav li:hover {
+    border-radius: 25px;
+    color: blue;
+  }
+  .nav-content {
+    margin-left: auto;
+  }
+  .text-container {
+    padding: 80px;
+    position: relative;
+  }
+  strong {
+    background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .container {
+    line-height: 30px;
+    font: monospace;
+  }
+  .nav li a {
+    color: white;
+    text-decoration: none;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .flex-container .text-container {
+    width: 50%;
+  }
+  .flex-container .image-container img {
+    max-width: 100%;
+    border-radius:20px;
+    padding:50px;
+  }
+  .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer h4 {
+  color: #fff;
+}
+
+.footer p {
+  color: #ccc;
+}
+
+.footer a {
+  color: #ccc;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .list-inline-item {
+  margin-right: 10px;
+}
+
+.footer .list-inline-item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0;
+  }
+  
+  .footer .container {
+    text-align: center;
+  }
+  
+  .footer .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+  
+</style>
+</head>
+<body>
+  <header class="header">
+    <div>
+      <div class="logo"><img src="https://cdn.glitch.global/37b22acd-87ec-4434-8b6f-76a6d3f6b0ab/logo.png?v=1715603026710" style="height:100px;width:240px;border-radius:100px;"></div>
+    </div>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="dropdown-item" href="#service1">Home</a></li>
+        <li class="nav-item"><a class="dropdown-item" href="#service2">About Us</a></li>
+        <li class="nav-item"><a class="dropdown-item" href="#service3">Contact</a></li>
+        <li class="nav-item"><a class="dropdown-item" href="#service4">Catalog</a></li>
+        <li class="nav-item"><a class="dropdown-item" href="#service5">Services</a></li>
+        <li class="nav-item"><a class="dropdown-item" href="#service6">Estimation</a></li>
+        <li class="nav-item"><a class="dropdown-item" href="#service8">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="flex-container">
+    <div class="text-container">
+      <h2>Service's dedicated to <strong><b>Customers</b></strong><br><strong><b>Dealers</b></strong> and <strong><b>Self Employed Shops</b></strong></h2>
+      <p>At Suresh Milk Point, we understand the significance of providing reliable and high-quality milk vendorship services to our community.<br>Our dedicated team focuses on ensuring smooth supply chain management while addressing the unique business needs of our clients. <br>By prioritizing customer satisfaction and offering dependable solutions,<br>we strive to enhance the milk procurement experience for individuals and businesses alike.<br>Trust Suresh Milk Point for excellence in service delivery and unparalleled commitment to your requirements.</p>
+      <br>
+    </div>
+    <div class="image-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.385412535568!2d78.47069871358627!3d17.44312906850347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb915ae5e9ac21%3A0x48598846c8cb9f1d!2sSURESH%20MILK%20POINT!5e0!3m2!1sen!2sin!4v1715613456863!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  
+    </div>
+  <div id="service1" class="container">
+    <h1>Home</h1>
+    <p><blockquote>
+Dear valued customers,
+
+We are delighted to introduce our milk home delivery service, designed to bring convenience and freshness right to your doorstep.
+
+At <strong>Suresh Milk Point</strong>, we understand the importance of starting your day with wholesome and nutritious milk. Our commitment is to provide you with the highest quality milk, sourced directly from local farms, ensuring freshness and purity in every drop.
+
+With our home delivery service, you can say goodbye to the hassle of rushing to the store every morning. Simply place your order online or through our dedicated phone line, and our friendly delivery team will ensure that your fresh milk is delivered promptly to your home.
+
+Whether you prefer full cream, toned, or skimmed milk, we have a variety of options to suit your preferences. Additionally, we offer flexible delivery schedules to accommodate your busy lifestyle.
+
+Join our growing community of satisfied customers who enjoy the convenience and reliability of our milk home delivery service. Experience the difference with Suresh Milk Point today!
+
+For more information or to place an order, please visit our website or contact us directly. We look forward to serving you soon.
+   </blockquote> </p>
+  </div>
+  <div id="service2" class="container">
+    <h1>About</h1>
+    <p>With over forty years in the industry, our commitment to providing exceptional milk delivery and dealership services remains unwavering. We take pride in delivering fresh, premium-quality milk directly to your doorstep, ensuring your satisfaction every time. From meticulous inventory management to building enduring customer connections, we prioritize every aspect with utmost care and dedication. Trust us to provide a seamless milk experience, enriched by decades of expertise and a steadfast dedication to excellence. Join our loyal customer base and experience the convenience and reliability that comes with our decades-long legacy in the milk industry.
+    <br><br></p>
+  </div>
+  <div id="service3" class="container">
+    <h1>Contact</h1>
+    <center><img srcset="https://cdn.glitch.global/37b22acd-87ec-4434-8b6f-76a6d3f6b0ab/Contact.png?v=1715606461368" width="600" height="400"></center>
+ </div>
+ <div id="service4" class="container">
+       <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img srcset="https://www.bigbasket.com/media/uploads/p/xl/40147606_1-vijaya-toned-milk.jpg" height="200" width="280"></h5>
+              <p class="card-text">Vijaya Toned milk<br>Mrp 29rs<br>&copy TSDDCF</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img srcset="https://m.media-amazon.com/images/I/81ss4XMVbmL._SL1500_.jpg" height="200" width="280"></h5>
+              <p class="card-text">Vijaya Standardised Milk<br>Mrp 31rs<br>&copy TSDDCF</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img srcset="https://m.media-amazon.com/images/I/81lnD-D6GgL._SX679_.jpg" height="200" width="280"></h5>
+              <p class="card-text">Vijaya Whole Milk<br>Mrp 36rs<br>&copy TSDDCF</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img srcset="https://www.bigbasket.com/media/uploads/p/l/40149828_1-heritage-toned-milk.jpg?tr=w-1080" height="200" width="280"></h5>
+              <p class="card-text">Heritage Toned Milk<br>Mrp 30rs<br>&copy Heritage Foods ltd</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img srcset="https://img1.exportersindia.com/product_images/bc-small/dir_157/4709771/standardised-milk-1527595485-3919381.png" height="200" width="280"></h5>
+              <p class="card-text">Heritage Standard Milk<br>Mrp 34rs<br>&copy Heritage Foods Ltd</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><img srcset="https://5.imimg.com/data5/ANDROID/Default/2022/3/QV/RA/LO/95978060/product-jpeg-1000x1000.png" height="200" width="280"></h5>
+              <p class="card-text">Heritage Full Cream<br>Mrp 40rs<br>&copy Heritage Foods Ltd</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><img srcset="https://th.bing.com/th/id/OIP.9BYazazRJk6ra-C179VqLgHaHa?rs=1&pid=ImgDetMain" height="200" width="280"></h5>
+                <p class="card-text">Jersey Toned Milk<br>Mrp 30rs<br>&copy Godrej Jersey</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><img srcset="https://www.freshdairynow.com/wp-content/uploads/2020/12/Jersey-Standardized-Milk-500ml.jpg" height="200" width="280"></h5>
+                <p class="card-text">Jersey Standard Milk<br>Mrp 34rs<br>&copy Godrej Jersey</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><img srcset="https://www.coromandelmarketing.com/wp-content/uploads/2021/02/Jersey-Milk.png" height="210" width="280"></h5>
+                <p class="card-text">Jersey Full cream milk<br>Mrp 40rs<br>&copy Godrej Jersey</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><img srcset="https://m.media-amazon.com/images/I/81jBZSGusFL._SL1500_.jpg" height="200" width="280"></h5>
+                <p class="card-text">Amul Taaza Milk<br>Mrp 27rs<br>&copy Amul India</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><img srcset="https://n3.sdlcdn.com/imgs/c/3/8/Amul-Whole-Milk-500-ml-SDL307576932-1-66641.jpg" height="200" width="280"></h5>
+                <p class="card-text">Amul Whole milk<br>Mrp 34rs<br>&copy Amul India</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><img srcset="https://m.media-amazon.com/images/I/71lnpGid2GL._SL1500_.jpg" height="200" width="280"></h5>
+                <p class="card-text">Curd 500grms<br>Mrp 48rs<br>&copy Heritage Foods ltd</p>
+              </div>
+            </div>
+          </div>
+          <div id="service6" class="container">
+ <h2>Estimate your monthly bill autonomously and have an idea about the monthly bill.</h2>
+ 
+<label>Select an item:</label>
+  <select id="item">
+    <option value="Vijaya Toned Milk">Vijaya Toned Milk</option>
+    <option value="Vijaya Standard Milk">Vijaya Standard Milk</option>
+    <option value="Vijaya Full Cream Milk">Vijaya Full Cream Milk</option>
+    <option value="Heritage Toned Milk">Heritage Toned Milk</option>
+    <option value="Heritage Standardised Milk">Heritage Standardised Milk</option>
+    <option value="Heritage Full Cream Milk">Heritage Full Cream Milk</option>
+    <option value="Jersey Toned Milk">Jersey Toned Milk</option>
+    <option value="Jersey Standardised Milk">Jersey Standardised Milk</option>
+    <option value="Jersey Full Cream Milk">Jersey full Cream</option>
+    <option value="Amul Taaza Milk">Amul taaza</option>
+    <option value="Amul Full Cream Milk">Amul Full Cream Milk</option>
+    <option value="Amul Buffalo Milk">Amul Buffalo Milk</option>
+    <option value="500g curd">Half litre Sachet</option>
+    <option value="170 curd">170 grsms Curd Sachet</option>
+    <option value="120 curd">120 grams Curd Sachet</option>
+    </select>
+
+  <button onclick="addToCart()">Add to Cart</button>
+
+  <p id="cart"></p>
+  <p id="total"></p>
+  
+<blockquote>The complete add to cart displayed amount is only for purchasing the gradual amount of quantity of milk required.<br>If you acquire home deliveries , please visit services section to find the delivery charges and other services regarding the delivery charges.</blockquote>
+  <script>
+    // Define a cart array to store selected items
+    let cart = [];
+    let total = 0;
+
+    function addToCart() {
+      const item = document.getElementById("item").value;
+      
+      // Define the value per item for a month
+      const valuePerItem = new Map([
+        ["Vijaya Toned Milk", 870 ],
+        ["Vijaya Standard Milk", 930 ],
+        ["Vijaya Full Cream Milk", 1080 ],
+        ["Heritage Toned Milk", 900 ],
+        ["Heritage Standardised Milk", 1020 ],
+        ["Heritage Full Cream Milk", 1200 ],
+        ["Jersey Toned Milk", 900 ],
+        ["Jersey Standardised Milk", 1020 ],
+        ["Jersey Full Cream Milk", 1200 ],
+        ["Amul Taaza Milk", 840 ],
+        ["Amul Full Cream Milk", 1020 ],
+        ["Amul Buffalo Milk", 1110 ],
+        ["500g curd",1440],
+        ["170 curd",450],
+        ["120 curd",300]
+      ]);
+
+      let itemValue = 0;
+      if (valuePerItem.has(item)) {
+        itemValue = valuePerItem.get(item);
+        cart.push({ item: item, value: itemValue });
+        total += itemValue;
+        updateCart();
+      } else {
+        document.getElementById("cart").innerText = "Invalid item selected.";
+      }
+    }
+
+    function updateCart() {
+      let cartText = "Items in Cart: \n";
+      for (let i = 0; i < cart.length; i++) {
+        cartText += cart[i].item + ": " + cart[i].value + " rs\n";
+      }
+      document.getElementById("cart").innerText = cartText;
+      document.getElementById("total").innerText = "Total Bill: " + total + " rs";
+    }
+  </script>
+
+ </div>
+ <div id="service5" class="container">
+<div class="flex-container">
+<!-- Inside the <div class="flex-container"> -->
+<div class="text-container">
+  <!-- Content for Home Deliveries -->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Deliveries</h5>
+      <p class="card-text">Get your favorite milk products delivered right to your doorstep. Enjoy the convenience of home delivery and never run out of milk again.</p>
+    </div>
+  </div>
+</div>
+<div class="text-container">
+  <!-- Content for Takeaways -->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Takeaways</h5>
+      <p class="card-text">Visit our store to pick up your favorite milk products on the go. Enjoy quick service and a wide selection of fresh dairy items.Come and collect  favorites now</p>
+      
+    </div>
+  </div>
+</div>
+<div class="text-container">
+  <!-- Content for Orders -->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Orders</h5>
+      <p class="card-text">Place your order online and have your milk products ready for pickup or delivery. Enjoy the ease of ordering from the comfort of your home.</p>
+    </div>
+  </div>
+</div>
+
+</div> 
+ </div>
+<div id="service7" class="container">
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Contact Information</h4>
+        <p>Prakash Nagar, Hyderabad, Telangana</p>
+        <p>Email: ashrith.sharma11@gmail.com</p>
+        <p>Phone:9703727111 | 8008968480</p>
+        <br>
+        <br>
+        <br>
+       <center> <p>&copy developed by <a href="ashrithsharma.github.io">Ashrith Sharma Vempati</a></p></center>
+      </div>
+      <div class="col-md-4">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#service1">Home</a></li>
+          <li><a href="#service2">About Us</a></li>
+          <li><a href="#service3">Contact</a></li>
+          <li><a href="#service4">Catalog</a></li>
+          <li><a href="#service5">Services</a></li>
+          <li><a href="#service6">Estimation</a></li>
+          <li><a href="#service7">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
