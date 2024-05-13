@@ -253,57 +253,65 @@
 }
 
 /* Media queries for responsiveness */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+}
+
+.text-container,
+.image-container {
+  padding: 5vw;
+}
+
+.card {
+  margin-bottom: 5vw;
+}
+
 @media (min-width: 576px) {
-  /* Adjust styles for small-sized screens and above */
-  #service4 {
-    padding: 3vw; /* Reduce padding for smaller screens */
-    border-radius: 1vw; /* Reduce border radius for smaller screens */
-  }
-
-  #service4 p {
-    font-size: 1.5vw; /* Reduce font size for smaller screens */
-    margin-bottom: 1.5vw; /* Reduce margin for smaller screens */
-  }
-
-  .nav li {
-    padding: 1vw 1.5vw; /* Reduce padding for smaller screens */
-    margin: 0.5vw; /* Reduce margin for smaller screens */
-  }
-
   .flex-container {
-    flex-direction: row; /* Adjust flex direction for medium-sized screens and above */
-    justify-content: space-between; /* Align items evenly */
-    align-items: center; /* Center-align items vertically */
+    padding: 3vw;
   }
 
-  .flex-container .text-container,
-  .flex-container .image-container {
-    width: 45%; /* Set width for text and image containers */
+  .card {
+    margin-bottom: 3vw;
   }
 }
 
 @media (min-width: 768px) {
-  /* Adjust styles for medium-sized screens and above */
-  #service4 {
-    padding: 2vw; /* Reduce padding for medium-sized screens */
+  .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
   }
 
-  #service4 p {
-    font-size: 1.3vw; /* Reduce font size for medium-sized screens */
-    margin-bottom: 1vw; /* Reduce margin for medium-sized screens */
+  .text-container,
+  .image-container {
+    width: 45%;
+    padding: 2vw;
   }
 
-  .nav li {
-    padding: 0.8vw 1.2vw; /* Adjust padding for medium-sized screens */
-    margin: 0.3vw; /* Adjust margin for medium-sized screens */
-  }
-
-  .flex-container .text-container,
-  .flex-container .image-container {
-    width: 40%; /* Adjust width for text and image containers */
+  .card {
+    margin-bottom: 2vw;
   }
 }
 
+@media (min-width: 992px) {
+  .flex-container {
+    padding: 1vw;
+  }
+
+  .text-container,
+  .image-container {
+    width: 40%;
+    padding: 1vw;
+  }
+
+  .card {
+    margin-bottom: 1vw;
+  }
+}
 /* Add more media queries as needed */
 
   
@@ -370,6 +378,79 @@
 .footer a:hover {
   color: #fff;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.nav .logo {
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.nav .logo img {
+  height: 100%;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin: 0 10px;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav li:hover {
+  border-radius: 25px;
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+}
 
 .footer .list-inline-item {
   margin-right: 10px;
@@ -408,7 +489,7 @@
         <li class="nav-item"><a class="dropdown-item" href="#service4">Catalog</a></li>
         <li class="nav-item"><a class="dropdown-item" href="#service5">Services</a></li>
         <li class="nav-item"><a class="dropdown-item" href="#service6">Estimation</a></li>
-        <li class="nav-item"><a class="dropdown-item" href="#service8">About</a></li>
+        <li class="nav-item"><a class="dropdown-item" href="#service7">About</a></li>
       </ul>
     </nav>
   </header>
